@@ -1,5 +1,13 @@
 /* Navbar Container */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .navbar {
+  width: 1500px;
+  height: 100px;
+  margin-bottom: 570px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,44 +20,51 @@
 }
 
 /* Logo */
-.navbar-logo {
+.logo {
     font-size: 1.8rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
+  
 }
 
 /* Nav Links */
-.navbar-links {
+.nav-links {
+  width: 400px;
+  margin-right: 100px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     list-style: none;
     gap: 2rem;
 }
 
-.navbar-links a {
+.nav-links h3{
     color: white;
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.navbar-links a:hover {
+.nav-links h3:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
     color: #ffd700;
 }
 
 /* Active Link */
-.navbar-links a.active {
+.nav-links h3.active {
     border-bottom: 3px solid #ffd700;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .navbar-links {
+    .nav-links {
         flex-direction: column;
         gap: 1rem;
     }
